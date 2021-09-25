@@ -1,4 +1,4 @@
-// the setup function runs once when you press reset or power the board
+//Don't forget to configurate your port, and you can change delay(1000), 1000=1s
 #define LED_BUILTIN 2
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
