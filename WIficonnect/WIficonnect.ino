@@ -39,5 +39,7 @@ Serial.println("");
 }
 
 void loop() {
- 
+ int power=WiFi.RSSI();
+ Serial.printf("Signal dB %d\n",power);
+ delay(5000);
 }

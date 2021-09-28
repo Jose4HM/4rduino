@@ -1,4 +1,3 @@
-//With this program you can create a WiFi red with your ESP8266,
 #include <ESP8266WiFi.h>
 const char* ssid="WIFI ESP8266";//Name of your red
 const char* password="12345678";//Your password, remember, at least 8 characters
