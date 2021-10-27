@@ -37,7 +37,7 @@ void setup() {
   // Imprime el IP asignado
   Serial.println("");
   Serial.println("WiFi conectado.");
-  Serial.println("IP: ");
+  Serial.println("Conectate a esta dirección IP ");
   Serial.println(WiFi.localIP());
   server.begin();
 }
