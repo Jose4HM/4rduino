@@ -6,12 +6,9 @@ void setup() {
   Serial.print("\nSetting Ap");//Status message, you can view it in monitor serie
   WiFi.softAP(ssid, password);
   Serial.println("WiFi is ready");
-
 }
-
 void loop() {
   int device= WiFi.softAPgetStationNum();//It conunts numbers of users connected to your red
   Serial.printf("Devices connected =%d\n",device);
   delay(5000);
-
 }
