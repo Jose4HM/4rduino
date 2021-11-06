@@ -2,7 +2,7 @@
 
 
 $servername = "localhost";
-$dbname = "schema";       // replace with dbname
+$dbname = "practica1";       // replace with dbname
 $password = "";     // replace with password
 $username = "root";     // replace with username
 
