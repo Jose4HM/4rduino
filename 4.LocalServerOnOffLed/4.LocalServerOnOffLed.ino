@@ -9,13 +9,14 @@ WiFiServer server(80);
 // Variable para guardar HTTP request
 String header;
 
+const int output5 = 5;//led rojo
+const int output4 = 4;//led verde
+int l = 0;
+
 // variable almacena el estado de las salidas
 String output5State = "off";
 String output4State = "off";
 
-// Pines de salida
-const int output5 = 5;
-const int output4 = 4;
 
 void setup() {
   Serial.begin(115200);
@@ -30,15 +31,31 @@ void setup() {
   Serial.print("Conectando a ");
   Serial.println(ssid);
   WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
+  while (WiFi.status() != WL_CONNECTED) { //Check for the connection
     delay(500);
     Serial.print(".");
+
+    if (l == 0) {
+      digitalWrite(output5, LOW);
+      digitalWrite(output4, HIGH);
+      l = 1;
+    } else if (l == 1) {
+      digitalWrite(output5, HIGH);
+      digitalWrite(output4, LOW);
+      l = 0;
+    }
   }
+  digitalWrite(output5, LOW);
+  digitalWrite(output4, LOW);
+  delay(2000);
   // Imprime el IP asignado
   Serial.println("");
   Serial.println("WiFi conectado.");
   Serial.println("Conectate a esta dirección IP ");
   Serial.println(WiFi.localIP());
+  digitalWrite(output4, HIGH);
+  delay(3000);
+  digitalWrite(output4, LOW);
   server.begin();
 }
 

@@ -17,6 +17,7 @@ WiFiClient wifiClient;
 // Pines de salida
 const int output5 = 5;//led rojo
 const int output4 = 4;//led verde
+int l = 0;
 
 const char* ssid = "FIWI";
 const char* password =  "21040411";
@@ -27,7 +28,7 @@ float humedity ;
 float vref = 3.3;
 float resolucion = vref / 1023;
 
-int l = 0;
+
 
 void setup() {
   delay(10);
