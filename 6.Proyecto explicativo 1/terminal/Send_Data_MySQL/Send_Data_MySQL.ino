@@ -14,9 +14,9 @@ DHT dht(D4, DHT11);
 
 #include <WiFiClient.h>
 WiFiClient wifiClient;
- // Pines de salida
-const int output5 = 5;
-const int output4 = 4;
+// Pines de salida
+const int output5 = 5;//led rojo
+const int output4 = 4;//led verde
 
 const char* ssid = "FIWI";
 const char* password =  "21040411";
@@ -27,12 +27,16 @@ float humedity ;
 float vref = 3.3;
 float resolucion = vref / 1023;
 
-
+int l = 0;
 
 void setup() {
   delay(10);
   Serial.begin(115200);
-
+  pinMode(output5, OUTPUT);
+  pinMode(output4, OUTPUT);
+  // Inicia salidas en 0
+  digitalWrite(output5, LOW);
+  digitalWrite(output4, LOW);
 
   WiFi.begin(ssid, password);
 
@@ -40,16 +44,26 @@ void setup() {
   while (WiFi.status() != WL_CONNECTED) { //Check for the connection
     delay(500);
     Serial.print(".");
-  }
 
-  Serial.println("Conectado con éxito, mi IP es: ");
-  Serial.println(WiFi.localIP());
-  pinMode(output5, OUTPUT);
-  pinMode(output4, OUTPUT);
-  // Inicia salidas en 0
+    if (l == 0) {
+      digitalWrite(output5, LOW);
+      digitalWrite(output4, HIGH);
+      l = 1;
+    } else if (l == 1) {
+      digitalWrite(output5, HIGH);
+      digitalWrite(output4, LOW);
+      l = 0;
+    }
+  }
   digitalWrite(output5, LOW);
   digitalWrite(output4, LOW);
-
+  delay(2000);
+  Serial.println("Conectado con éxito, mi IP es: ");
+  Serial.println(WiFi.localIP());
+  digitalWrite(output4, HIGH);
+  delay(2000);
+  digitalWrite(output4, LOW);
+  dht.begin();
 }
 
 void loop() {
@@ -73,7 +87,7 @@ void loop() {
 
     String datos_a_enviar = "temperature=" + String(temperature) + "&humedity=" + String(humedity);
 
-    http.begin(wifiClient, "http://192.168.0.104/practica1/recibe_data.php");       //Indicamos el destino
+    http.begin(wifiClient, "http://192.168.0.104/practica1/recibe_data.php");       //Indicamos el destino-Modificar
     http.addHeader("Content-Type", "application/x-www-form-urlencoded"); //Preparamos el header text/plain si solo vamos a enviar texto plano sin un paradigma llave:valor.
 
     int codigo_respuesta = http.POST(datos_a_enviar);   //Enviamos el post pasándole, los datos que queremos enviar. (esta función nos devuelve un código que guardamos en un int)
@@ -103,5 +117,5 @@ void loop() {
 
   }
 
-  delay(10000);
+  //delay(10000);
 }
