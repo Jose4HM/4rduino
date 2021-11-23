@@ -8,7 +8,7 @@ WiFiClient wifiClient;
 // visit io.adafruit.com if you need to create an account,
 // or if you need your Adafruit IO key.
 #define IO_USERNAME    "Yasperterian"
-#define IO_KEY         "aio_eJLI76SEvNOL6NZPnqnjvTLZFdXt"
+#define IO_KEY         "aio_evFl86CxrRBtCLbNzEzanR2lHqlO"
 
 /******************************* WIFI Configuration **************************************/
 
