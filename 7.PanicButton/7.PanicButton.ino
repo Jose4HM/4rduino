@@ -4,7 +4,7 @@
 #define PIN_BUTTON D0 //Puerto del botón
 #define PIN_LED D1 //Puerto del led
 
-const char* servidor_mqtt = "192.168.0.104"; //mosquitto
+const char* servidor_mqtt = "192.168.0.107"; //mosquitto
 int puerto = 1883;
 
 int ledState = 0;
@@ -48,7 +48,7 @@ void pushButton() {
     emergencyState = 1;
     client.publish("panic", String(emergencyState).c_str());
     Serial.println(emergencyState);
-    delay(1000);//Esperará 1 seg
+    delay(800);//Esperará 1 seg
     digitalWrite(PIN_LED, ledState);//Apagará el led
     emergencyState = 0;
     Serial.println(Yano);//Print mensaje de no ayuda
