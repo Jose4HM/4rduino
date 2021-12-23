@@ -5,7 +5,7 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);  // Configure LiquidCrystal_I2C library with
  
 void setup() {
  
-  lcd.init();                        // Initialize I2C LCD module
+  lcd.begin();                        // Initialize I2C LCD module
  
   lcd.backlight();                   // Turn backlight ON
  
