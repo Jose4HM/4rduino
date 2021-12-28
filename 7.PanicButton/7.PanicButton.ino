@@ -72,12 +72,12 @@ void reconnect() {
       lcd.print("      MQTT ");
       lcd.setCursor(0,1);
       lcd.print("     Conectado");
-      delay(1000);
       lcd.clear();
       lcd.setCursor(0,0);
       lcd.print("      TODO      ");
       lcd.setCursor(0,1);
       lcd.print("     Listo    ");
+      delay(1000);
       digitalWrite(PIN_B, LOW);
       digitalWrite(PIN_G, HIGH);
       digitalWrite(PIN_R, LOW);
@@ -110,8 +110,6 @@ void pushButton() {
   String Yano = "Ya no uwu (╯°□°）╯︵ ┻━┻";
   if (!client.connected()) reconnect();
   client.loop();
-     
-    
   if (digitalRead(PIN_BUTTON) == 1) {//Si el boton es presionado
     String file;
     DynamicJsonDocument doc(1024);       
@@ -149,6 +147,12 @@ void pushButton() {
     lcd.print("   Ya no >:v ");
     lcd.setCursor(0,1);
     lcd.print("  Tranquilidad");
+    delay(1000);
+    lcd.clear();
+    lcd.setCursor(0,0);
+    lcd.print("      TODO      ");
+    lcd.setCursor(0,1);
+    lcd.print("      Listo    ");
     digitalWrite(PIN_Y, HIGH);
     Serial.println(emergencyState);
     client.publish("panic", String(emergencyState).c_str());
@@ -170,7 +174,7 @@ void setup() {
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0,0);
-  lcd.print("1. Conectarse a");
+  lcd.print(" Conectandose a");
   lcd.setCursor(0,1);
   lcd.print("      WIFI");
   configuracion_wifi();
@@ -184,14 +188,6 @@ void setup() {
   digitalWrite(PIN_R, ledState);//Inicializar el LED a 0
   digitalWrite(PIN_B, ledState);//Inicializar el LED a 0
   digitalWrite(PIN_Y, ledState);//Inicializar el LED a 0
-
-     
-
-
-
-
-
-  
 }
   
 void loop() {

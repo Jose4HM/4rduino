@@ -26,33 +26,33 @@
     <meta charset="UTF-8">
     <title>Registrate</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styleindex.css">
 </head>
 
 <body>
     <div class="login-box">
-        <img class="avatar" src="assets/img/user.jpg " alt="Logo de joss">
+        <img class="avatar" src="assets/img/user.png" alt="Logo de joss">
 
         <?php if(!empty($message)): ?>
             <p> <?= $message ?></p>
         <?php endif; ?>
 
-        <h1>Registrate</h1>
+        <h1>Sign up</h1>
 
-        <span> o <a href="index.php"> Inicia sesión </a></span>
+        <span> or <a href="index.php"> Log in </a></span>
 
         <form method="POST" action="signup.php">
             <!-- User name -->
-            <label for="username">Correo Electronico</label>
-            <input type="text" name="email" placeholder="Ingresa tu correo">
+            <label for="username">Mail</label>
+            <input type="text" name="email" placeholder="Introduce your mail">
             <!-- password -->
-            <label for="password">Contraseña</label>
-            <input type="password" name="password" placeholder="Ingresa contraseña">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Introduce a password">
 
-            <label for="password">Confirma contraseña</label>
-            <input type="password" name="confirm_password" placeholder="Confirma tu contraseña">
+            <label for="password">Confirm your password</label>
+            <input type="password" name="confirm_password" placeholder="Password must match">
 
-            <input type="Submit" value="Registrarse">
+            <input type="Submit" value="Registrate user">
         </form>
     </div>
 </body>

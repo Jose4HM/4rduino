@@ -3,8 +3,8 @@
     
 <head>
     <meta charset="UTF-8">
-    <title>Menu Principal</title>
-    <link rel="stylesheet" href="assets/css/stylecircle.css">
+    <title>Menu</title>
+    <link rel="stylesheet" href="assets/css/stylemain.css">
 </head>
 <body>
     <div class="contenedor">
@@ -13,7 +13,7 @@
                 <img src="assets/img/dash.png">
                 <div class="capa">
                     <h3>Dashboard</h3>
-                    <p>Gráficas, historial, estados y demás.</p>
+                    <p>Graph, register, states and more.</p>
                 </div>
             </figure>
         </a>
@@ -23,20 +23,20 @@
             <figure>
                 <img src="assets/img/gears.png">
                 <div class="capa">
-                    <h3>Configuración</h3>
-                    <p>Nombre de usuario, correo, contraseña, correo seguro, etc.</p>
+                    <h3>Settings</h3>
+                    <p>Here you can control your account.</p>
                 </div>
             </figure>
         </a>
     </div>     
     
     
-    <a href="negro.php" class="btn-neon">
+    <a href="info.php" class="btn-neon">
         <span id="span1"></span>
         <span id="span2"></span>
         <span id="span3"></span>
         <span id="span4"></span>
-        Acerca de
+        About
     </a>
  
     <a href="logout.php" class="btn-neon1">
