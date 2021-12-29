@@ -47,8 +47,8 @@
 
         <form action="index.php" method="POST">
             <!-- User name -->
-            <label for="username">Mail</label>
-            <input type="text" name="email" placeholder="Introduce your mail">
+            <label for="username">E-mail</label>
+            <input type="text" name="email" placeholder="Introduce your E-mail">
 
             <!-- password -->
             <label for="password">Password</label>

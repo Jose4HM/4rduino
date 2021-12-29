@@ -24,7 +24,7 @@
                 <img src="assets/img/gears.png">
                 <div class="capa">
                     <h3>Settings</h3>
-                    <p>Here you can control your account.</p>
+                    <p>Here you can configurate your account.</p>
                 </div>
             </figure>
         </a>
