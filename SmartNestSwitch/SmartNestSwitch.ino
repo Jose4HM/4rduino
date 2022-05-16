@@ -142,9 +142,7 @@ void startMqtt() {
 			} else {
 				Serial.println("Not possible to connect to Broker Error code:");
 				Serial.print(client.state());
-          digitalWrite(PIN_R, HIGH);
-          digitalWrite(PIN_Y, LOW);
-          digitalWrite(PIN_G, LOW);
+          c
 			}
 
 			delay(0x7530);

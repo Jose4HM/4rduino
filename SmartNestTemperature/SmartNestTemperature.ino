@@ -233,26 +233,12 @@ void turnOn() {
 }
 
 void sendValue() {
-	value = round(t);
-  humidity=round(h);
+	value = t;
+  humidity = h;
 	char message[5];
   char messageh[5];
-	sprintf(message, "%d", value);
+	sprintf(message, "%d.%02d", (int)value, (int)(value*100)%100);
   sprintf(messageh, "%d", humidity);
 	sendToBroker("report/temperature", message);
   sendToBroker("report/humidity", messageh);
 }
-// void sendValue() {
-// 	float value = dht.readTemperature();
-//   // int r=value;
-//   // float redon=0;
-//   // float resta=value-r;
-//   // if (resta>0.5){//Google home works just 1, 1.5,2, 2.5, 3, 3.5...
-//   //   redon=r+1;
-//   // }else{
-//   //   redon=r+0.5;
-//   // }
-// 	char message[6];
-// 	sprintf(message, "%d", String(redon));
-// 	sendToBroker("report/temperature", message);
-// }
