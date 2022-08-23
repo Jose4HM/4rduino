@@ -1,0 +1,1170 @@
+[
+    {
+        "id": "e926df77a21f7fb0",
+        "type": "tab",
+        "label": "DHT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e0fbc3ec3c423697",
+        "type": "tab",
+        "label": "Radar",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ced26385c177e6e1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#f0dc00",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#f0dc00",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#f0dc00",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#1e1a1a",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#ffef3d",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#212121",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#1f1f1f",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#f0dc00",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#3b3b3b",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Control Center",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7f78f1ea8e6ab857",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Broker",
+        "broker": "192.168.0.103",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "78c51e73bf2b0a84",
+        "type": "ui_link",
+        "name": "Main Menu",
+        "link": "http://localhost/panicbuttonserver/main.php",
+        "icon": "open_in_browser",
+        "target": "thistab",
+        "order": 2
+    },
+    {
+        "id": "542338b146203adb",
+        "type": "ui_group",
+        "name": "Graphics",
+        "tab": "31fee475834d41bc",
+        "order": 1,
+        "disp": true,
+        "width": 21,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2ef1f65d917d354f",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "hist_dht",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "31fee475834d41bc",
+        "type": "ui_tab",
+        "name": "Humedad",
+        "icon": "fa-area-chart",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "fccaee26f9f207bd",
+        "type": "ui_group",
+        "name": "Historial",
+        "tab": "fb6152c752a6b46e",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ea77de1fdf2138eb",
+        "type": "ui_group",
+        "name": "Estado",
+        "tab": "fb6152c752a6b46e",
+        "order": 1,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fb6152c752a6b46e",
+        "type": "ui_tab",
+        "name": "Radar",
+        "icon": "fa-wifi",
+        "order": 15,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8efd455e5f0630bc",
+        "type": "mqtt in",
+        "z": "e926df77a21f7fb0",
+        "name": "",
+        "topic": "esp/dht/temperature",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "7f78f1ea8e6ab857",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 100,
+        "wires": [
+            [
+                "6df7fec2635797bb",
+                "96827f8e1b1f8e2c",
+                "03c0d110948c4dbd",
+                "0f271e9404cd8ce6"
+            ]
+        ]
+    },
+    {
+        "id": "baf7e1ce3fd997b9",
+        "type": "mqtt in",
+        "z": "e926df77a21f7fb0",
+        "name": "",
+        "topic": "esp/dht/humidity",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "7f78f1ea8e6ab857",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "d7b047c09a07389e",
+                "bf240b7651f18810",
+                "c9be1994bf4535a4",
+                "d01c9cd23790e972"
+            ]
+        ]
+    },
+    {
+        "id": "6df7fec2635797bb",
+        "type": "ui_gauge",
+        "z": "e926df77a21f7fb0",
+        "name": "",
+        "group": "542338b146203adb",
+        "order": 2,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "40",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 490,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d7b047c09a07389e",
+        "type": "ui_gauge",
+        "z": "e926df77a21f7fb0",
+        "name": "",
+        "group": "542338b146203adb",
+        "order": 4,
+        "width": 6,
+        "height": 5,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 440,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "96827f8e1b1f8e2c",
+        "type": "debug",
+        "z": "e926df77a21f7fb0",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "bf240b7651f18810",
+        "type": "debug",
+        "z": "e926df77a21f7fb0",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4ba0c3b497fd7fe9",
+        "type": "mysql",
+        "z": "e926df77a21f7fb0",
+        "mydb": "2ef1f65d917d354f",
+        "name": "History",
+        "x": 740,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "03c0d110948c4dbd",
+        "type": "function",
+        "z": "e926df77a21f7fb0",
+        "name": "Insert values into database",
+        "func": "var st = parseFloat(msg.payload);\nmsg.topic = \"INSERT INTO historial(Temp) VALUES('\"+st+\"')\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "4ba0c3b497fd7fe9"
+            ]
+        ]
+    },
+    {
+        "id": "c9be1994bf4535a4",
+        "type": "function",
+        "z": "e926df77a21f7fb0",
+        "name": "Insert values into database",
+        "func": "var st1 = parseFloat(msg.payload);\nmsg.topic = \"INSERT INTO hist_humid(Humid) VALUES('\"+st1+\"')\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 480,
+        "wires": [
+            [
+                "eefcf245353f54e0"
+            ]
+        ]
+    },
+    {
+        "id": "0f271e9404cd8ce6",
+        "type": "function",
+        "z": "e926df77a21f7fb0",
+        "name": "Get data from data base",
+        "func": "msg.topic = \"SELECT TIME,DATE_FORMAT(TIME,' %Y-%m-%d %H:%i:%s') AS shortdate, Temp FROM historial\";\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "6d8030bd932bd764"
+            ]
+        ]
+    },
+    {
+        "id": "6d8030bd932bd764",
+        "type": "mysql",
+        "z": "e926df77a21f7fb0",
+        "mydb": "2ef1f65d917d354f",
+        "name": "Indicate Database",
+        "x": 790,
+        "y": 260,
+        "wires": [
+            [
+                "9d5ec3315f445038"
+            ]
+        ]
+    },
+    {
+        "id": "9d5ec3315f445038",
+        "type": "change",
+        "z": "e926df77a21f7fb0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"series\":[\"Temperature\"],\t       \"data\":    (\t           [\t               [\t                   msg.payload[].            Temp        \t               ]\t           ]    \t       ),\t       \"labels\":(\t           [\t               msg.payload[].        \"shortdate\"    \t           ]    \t       )\t   }\t]",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 260,
+        "wires": [
+            [
+                "a7d0667ff1d764d6"
+            ]
+        ]
+    },
+    {
+        "id": "a7d0667ff1d764d6",
+        "type": "ui_chart",
+        "z": "e926df77a21f7fb0",
+        "name": "",
+        "group": "542338b146203adb",
+        "order": 1,
+        "width": 15,
+        "height": 5,
+        "label": "Temperature over time",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "50",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1260,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9bd4b0f3062ed3f8",
+        "type": "change",
+        "z": "e926df77a21f7fb0",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "[\t   {\t       \"series\":[\"Humidity\"],\t       \"data\":    (\t           [\t               [\t                   msg.payload[].            Humid        \t               ]\t           ]    \t       ),\t       \"labels\":(\t           [\t               msg.payload[].        \"shortdate\"    \t           ]    \t       )\t   }\t]",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 580,
+        "wires": [
+            [
+                "9b9a872f9cba4bf6"
+            ]
+        ]
+    },
+    {
+        "id": "9b9a872f9cba4bf6",
+        "type": "ui_chart",
+        "z": "e926df77a21f7fb0",
+        "name": "",
+        "group": "542338b146203adb",
+        "order": 3,
+        "width": 15,
+        "height": 5,
+        "label": "Humidity over time",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "-10",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "50",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1290,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eefcf245353f54e0",
+        "type": "mysql",
+        "z": "e926df77a21f7fb0",
+        "mydb": "2ef1f65d917d354f",
+        "name": "History",
+        "x": 760,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d01c9cd23790e972",
+        "type": "function",
+        "z": "e926df77a21f7fb0",
+        "name": "Get data from data base",
+        "func": "msg.topic = \"SELECT Time,DATE_FORMAT(Time,' %Y-%m-%d %H:%i:%s') AS shortdate, Humid FROM hist_humid\";\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 580,
+        "wires": [
+            [
+                "8c100e16881bd9e7"
+            ]
+        ]
+    },
+    {
+        "id": "8c100e16881bd9e7",
+        "type": "mysql",
+        "z": "e926df77a21f7fb0",
+        "mydb": "2ef1f65d917d354f",
+        "name": "Indicate Database",
+        "x": 810,
+        "y": 580,
+        "wires": [
+            [
+                "9bd4b0f3062ed3f8"
+            ]
+        ]
+    },
+    {
+        "id": "d584cd1ca2692519",
+        "type": "mqtt in",
+        "z": "e926df77a21f7fb0",
+        "name": "",
+        "topic": "esp/sesion/name",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7f78f1ea8e6ab857",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 720,
+        "wires": [
+            [
+                "7d57a74a5826e29c",
+                "da8bccf9cddeed7f",
+                "ceacb872503b21a0"
+            ]
+        ]
+    },
+    {
+        "id": "7d57a74a5826e29c",
+        "type": "debug",
+        "z": "e926df77a21f7fb0",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "da8bccf9cddeed7f",
+        "type": "function",
+        "z": "e926df77a21f7fb0",
+        "name": "Insert values into database",
+        "func": "var name=msg.payload\nmsg.topic = \"INSERT INTO nombre(Nombre) VALUES('\"+name+\"')\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 660,
+        "wires": [
+            [
+                "86c8ee830c46ef62"
+            ]
+        ]
+    },
+    {
+        "id": "86c8ee830c46ef62",
+        "type": "mysql",
+        "z": "e926df77a21f7fb0",
+        "mydb": "2ef1f65d917d354f",
+        "name": "Name history",
+        "x": 750,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ceacb872503b21a0",
+        "type": "function",
+        "z": "e926df77a21f7fb0",
+        "name": "Get data from data base",
+        "func": "msg.topic = \"SELECT tiempo,DATE_FORMAT(tiempo,' %Y-%m-%d %H:%i:%s') AS shortdate, Nombre FROM nombre\";\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 740,
+        "wires": [
+            [
+                "14326984cd4e2d92"
+            ]
+        ]
+    },
+    {
+        "id": "14326984cd4e2d92",
+        "type": "mysql",
+        "z": "e926df77a21f7fb0",
+        "mydb": "2ef1f65d917d354f",
+        "name": "Indicate Database",
+        "x": 770,
+        "y": 740,
+        "wires": [
+            [
+                "9564f1317595e4ba"
+            ]
+        ]
+    },
+    {
+        "id": "9564f1317595e4ba",
+        "type": "ui_table",
+        "z": "e926df77a21f7fb0",
+        "group": "ea77de1fdf2138eb",
+        "name": "Historial",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "columns": [
+            {
+                "field": "shortdate",
+                "title": "Tiempo",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Nombre",
+                "title": "Usuario",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 980,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "49498d2bf394fec4",
+        "type": "mqtt in",
+        "z": "e0fbc3ec3c423697",
+        "name": "",
+        "topic": "esp/motor/Grados",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7f78f1ea8e6ab857",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 180,
+        "wires": [
+            [
+                "ba646fb0ce1453a7",
+                "2de3f13f85c563b7"
+            ]
+        ]
+    },
+    {
+        "id": "ba646fb0ce1453a7",
+        "type": "debug",
+        "z": "e0fbc3ec3c423697",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8d2af1c8993c9097",
+        "type": "mqtt in",
+        "z": "e0fbc3ec3c423697",
+        "name": "",
+        "topic": "esp/ultrasonico/Distance",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7f78f1ea8e6ab857",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 260,
+        "wires": [
+            [
+                "3b542fe857683738",
+                "96f5e5d2332fa576"
+            ]
+        ]
+    },
+    {
+        "id": "3b542fe857683738",
+        "type": "debug",
+        "z": "e0fbc3ec3c423697",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "96f5e5d2332fa576",
+        "type": "ui_chart",
+        "z": "e0fbc3ec3c423697",
+        "name": "",
+        "group": "ea77de1fdf2138eb",
+        "order": 2,
+        "width": 14,
+        "height": 5,
+        "label": "Distancia",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "40",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 500,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2de3f13f85c563b7",
+        "type": "ui_gauge",
+        "z": "e0fbc3ec3c423697",
+        "name": "",
+        "group": "ea77de1fdf2138eb",
+        "order": 3,
+        "width": 15,
+        "height": 6,
+        "gtype": "gage",
+        "title": "Ángulo de visión",
+        "label": "Grados",
+        "format": "{{value}}",
+        "min": "40",
+        "max": "150",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 520,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ab184ec82d3ba3f1",
+        "type": "debug",
+        "z": "e0fbc3ec3c423697",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "1849c7b2072d97ab",
+        "type": "mqtt in",
+        "z": "e0fbc3ec3c423697",
+        "name": "",
+        "topic": "esp/led/Estado",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7f78f1ea8e6ab857",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 420,
+        "wires": [
+            [
+                "ab184ec82d3ba3f1",
+                "47c502975204a955"
+            ]
+        ]
+    },
+    {
+        "id": "47c502975204a955",
+        "type": "change",
+        "z": "e0fbc3ec3c423697",
+        "name": "Payload to number",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 560,
+        "wires": [
+            [
+                "71f2b03cb9ed340f",
+                "93ee4120576ebc9b",
+                "ef7bb9189a1b0974"
+            ]
+        ]
+    },
+    {
+        "id": "ef7bb9189a1b0974",
+        "type": "function",
+        "z": "e0fbc3ec3c423697",
+        "name": "Evaluate payload to change status",
+        "func": "if (msg.payload != 1)\n{\n    msg.payload = \"Ready to send mail\";\n}\nelse\n{\n    msg.payload = \"Mail sent!\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 560,
+        "wires": [
+            [
+                "525afa825a7963cf"
+            ]
+        ]
+    },
+    {
+        "id": "93ee4120576ebc9b",
+        "type": "switch",
+        "z": "e0fbc3ec3c423697",
+        "name": "If payload=1, then send email",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 720,
+        "y": 500,
+        "wires": [
+            [
+                "6bba623b505edfd4"
+            ]
+        ]
+    },
+    {
+        "id": "71f2b03cb9ed340f",
+        "type": "ui_led",
+        "z": "e0fbc3ec3c423697",
+        "order": 5,
+        "group": "ea77de1fdf2138eb",
+        "width": 5,
+        "height": 2,
+        "label": "LED status:",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#1f351d",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#05ff05",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED status",
+        "x": 680,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "6bba623b505edfd4",
+        "type": "change",
+        "z": "e0fbc3ec3c423697",
+        "name": "Set Subject and Body's mail",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Algo o alguien no ha pasado por la puerta. ",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Algo no esta bien",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 500,
+        "wires": [
+            [
+                "c54e24d6b90fabdf"
+            ]
+        ]
+    },
+    {
+        "id": "525afa825a7963cf",
+        "type": "ui_text",
+        "z": "e0fbc3ec3c423697",
+        "group": "ea77de1fdf2138eb",
+        "order": 4,
+        "width": 5,
+        "height": 2,
+        "name": "",
+        "label": "E-mail status:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1000,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "c54e24d6b90fabdf",
+        "type": "e-mail",
+        "z": "e0fbc3ec3c423697",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "jhanccoma@unsa.edu.pe",
+        "dname": "Receiver mail",
+        "x": 1260,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "39f2ceb89f03a414",
+        "type": "mqtt in",
+        "z": "e0fbc3ec3c423697",
+        "name": "",
+        "topic": "esp/motor/Est",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "7f78f1ea8e6ab857",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 720,
+        "wires": [
+            [
+                "a2886dfe30101c78",
+                "ee9dfe76b1687465"
+            ]
+        ]
+    },
+    {
+        "id": "a2886dfe30101c78",
+        "type": "debug",
+        "z": "e0fbc3ec3c423697",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "ee9dfe76b1687465",
+        "type": "ui_text",
+        "z": "e0fbc3ec3c423697",
+        "group": "ea77de1fdf2138eb",
+        "order": 6,
+        "width": 5,
+        "height": 2,
+        "name": "",
+        "label": "Puerta",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 450,
+        "y": 800,
+        "wires": []
+    }
+]
