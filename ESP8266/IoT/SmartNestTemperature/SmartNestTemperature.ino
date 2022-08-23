@@ -4,7 +4,7 @@
 #include <WiFiClient.h>
 #include <DHT.h>
 
-#define SSID_NAME "COVID variante MEGATRON"                         // Your Wifi Network name
+#define SSID_NAME "Scooby-doo donde estas?"                         // Your Wifi Network name
 #define SSID_PASSWORD "21040411"                 // Your Wifi network password
 #define MQTT_BROKER "smartnest.cz"                    // Broker host
 #define MQTT_PORT 1883                                // Broker port
