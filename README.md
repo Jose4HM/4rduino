@@ -21,6 +21,6 @@ Soy estudiante de Ingeniería de Telecomunicaciones, intento hacer explicaciones
 
 
 ## Book :blue_book:	
-My book can be found in [Apuntes sobre Telecomunicaciones](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/main.pdf)
+My book can be found in [Apuntes sobre Telecomunicaciones I](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/main.pdf) or [Apuentes sobre Telecomunicaciones II](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/mainv2.pdf).
 ## Libro :blue_book:
-Mi libro puede ser encontrado en [Apuntes sobre Telecomunicaciones](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/main.pdf)
+Mi libro puede ser encontrado en [Apuntes sobre Telecomunicaciones](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/main.pdf) o [Apuentes sobre Telecomunicaciones II](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/mainv2.pdf).
