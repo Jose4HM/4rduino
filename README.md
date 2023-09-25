@@ -9,8 +9,7 @@ En este repositorio, puedes encontrar códigos y archivos para hacer algunos cir
 
 ## :computer:Author
 
-- [@yasperterian](https://github.com/Yasperterian/)
-
+- [@Jose4HM](https://github.com/Jose4HM/)
 
 ## 🚀 About Me
 I'm a Telecomunications Engineer Student, I try to make simple explanations for fast comprehension.
